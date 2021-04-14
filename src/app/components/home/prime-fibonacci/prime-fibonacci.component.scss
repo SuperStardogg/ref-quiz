@@ -1,0 +1,36 @@
+.container {
+    height: 100vh;
+}
+
+.c-flex__container{
+    display: flex;
+    width: 100%;
+    min-width: 600px;
+    height: inherit;
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.c-flex__container--left{
+    width: 200px;
+    border: 1px solid;
+}
+
+.c-flex__container--middle{
+    flex: 1;
+    min-width: 100px;
+    border: 1px solid;
+}
+
+.c-flex__container--right{
+    width: 300px;
+    border: 1px solid;
+
+    p{
+        margin: 0;
+    }
+}

@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Filter search results</h1>
+
+    <input type="text" aria-describedby="search-text" [(ngModel)]="searchText"
+        placeholder="Enter text to search">
+    <ul *ngIf = "characters">
+    <li *ngFor="let character of characters | filterSearchResults: searchText">
+        {{character}}
+    </li>
+    </ul>
+</div>
